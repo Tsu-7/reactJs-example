@@ -4,9 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import {Provider} from 'react-redux'; // thẻ bọc ngoài cùng: là nơi lưu giữ các giá trị dùng chung, được gọi trong store
+import store from './redux/store'; // tệp giá trị được đưa lên
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import ShowName from './components/ShowName';
 import ListProduct from './components/listProduct/ListProduct';
+import Lesson3 from './lessons/Lesson3';
 
 function App() {
   const data = [
@@ -40,7 +41,8 @@ function App() {
 ]
   return (
     <div className="App">
-      <ListProduct data={data}/>
+      {/* <ListProduct data={data}/> */}
+      <Lesson3/>
     </div>
   );
 }
